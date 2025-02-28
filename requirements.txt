@@ -1,0 +1,5 @@
+apache-airflow
+apache-kafka
+pyspark
+google-cloud-bigquery
+pandas
