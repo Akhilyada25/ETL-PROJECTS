@@ -54,29 +54,7 @@ This project builds an **automated ETL (Extract, Transform, Load) pipeline** to 
 │── 📜 .gitignore          # Ignore unnecessary files  
 ```  
 
----
 
-### **🚀 How to Run the Project**  
-
-#### **1️⃣ Setup Environment**  
-```bash
-git clone https://github.com/your-username/retail-sales-etl.git
-cd retail-sales-etl
-```
-
-#### **2️⃣ Install Dependencies**  
-```bash
-pip install -r requirements.txt
-```
-
-#### **3️⃣ Start Apache Airflow**  
-```bash
-airflow db init  
-airflow webserver --port 8080  
-airflow scheduler  
-```
-- Access **Airflow UI** at `http://localhost:8080/`  
-- Trigger DAGs manually or schedule them  
 
 ---
 
@@ -90,8 +68,8 @@ airflow scheduler
 
 ### **📩 Contact & Contributions**  
 👨‍💻 **Author:** Akhil Yada  
-📧 **Email:** [your.email@example.com]  
-📌 **Contributions are welcome!** Feel free to fork, submit PRs, and report issues.  
+📧 **Email:** akhilyada25@gmail.com  
+📌   
 
 ---
 
