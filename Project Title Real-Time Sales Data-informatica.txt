@@ -1,0 +1,55 @@
+Project Title: Real-Time Sales Data Processing with Informatica ETL
+Objective:
+Build an end-to-end ETL pipeline using Informatica PowerCenter to process real-time sales data from an e-commerce system. The pipeline will extract data from a streaming source (Kafka), transform it to ensure data quality, and load it into a data warehouse (Google BigQuery).
+
+Technology Stack:
+ETL Tool: Informatica PowerCenter
+Streaming Source: Apache Kafka
+Database: Google BigQuery / Snowflake
+Cloud Storage: Google Cloud Storage (GCS) / AWS S3
+Workflow Scheduler: Apache Airflow
+Project Workflow:
+Extract:
+
+Consume real-time sales transactions from a Kafka topic using Informatica Kafka Connector.
+Read JSON messages containing sales data (Order ID, Customer ID, Product, Amount, Timestamp, etc.).
+Transform:
+
+Data Cleansing: Handle missing or corrupted records.
+Data Enrichment: Join with customer & product master data.
+Aggregation: Compute daily and hourly sales revenue.
+Schema Validation: Ensure data type consistency before loading.
+Load:
+
+Store raw data into Google Cloud Storage (GCS).
+Load transformed data into Google BigQuery for analytics.
+Steps to Implement in Informatica PowerCenter
+Create Source Definition:
+
+Use Kafka Adapter in Informatica to connect to the Kafka topic.
+Define the schema of incoming JSON messages.
+Create Staging Table in BigQuery:
+
+Define an external table in BigQuery pointing to GCS.
+Develop Informatica Mapping (ETL Workflow):
+
+Extract JSON messages from Kafka.
+Apply transformations:
+Filter invalid records.
+Convert timestamps.
+Aggregate sales data.
+Load the transformed data into BigQuery.
+Schedule the Workflow with Apache Airflow:
+
+Automate the ETL process to run every 5 minutes for real-time updates.
+Expected Outcome:
+Real-time ingestion of sales data from Kafka.
+Automated ETL pipeline with Informatica.
+Data warehouse integration for analytics and reporting.
+GitHub Submission
+Your GitHub repo should include:
+✅ Project Documentation (README.md)
+✅ Informatica Workflow XML (Exported mapping)
+✅ Kafka Producer Code (Simulating sales data stream)
+✅ SQL Scripts (BigQuery table creation)
+✅ Airflow DAG Script (ETL Scheduling)
