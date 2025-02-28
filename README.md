@@ -80,7 +80,7 @@ airflow scheduler
 
 ---
 
-### **📊 Expected Outcomes**  
+### **📊 Outcomes**  
 ✅ **Automated ETL pipeline** with **Apache Airflow**  
 ✅ **Cleaned and structured data** in **Google BigQuery**  
 ✅ **Optimized partitioned & clustered tables** for **fast querying**  
